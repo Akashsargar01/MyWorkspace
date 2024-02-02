@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body{
+background-image:url(image/first.jpg);
+background-size:cover;
+}
+input{
+width:200px;
+font-family: Tahoma, Geneva, sans-serif;
+height:25px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+}
+nav ul{
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	height: 0px;
+}
+nav ul li{
+	list-style: none;
+	padding: 0 23px;
+
+
+}
+nav ul li a{
+	color: black;
+	text-decoration: bold;
+	text-align: right;
+	}
+	
+input.button {
+width:100px;
+
+right:20px;
+bottom:20px;
+background:#09C;
+color:#fff;
+font-family: Tahoma, Geneva, sans-serif;
+height:30px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border: 1p solid #999;
+}
+input.button:hover {
+background:#fff;
+color:#09C;
+}
+form    {
+background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+margin:auto;
+width:550px;
+height:400px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 20px;
+font-weight: bold;
+color: #000000;
+text-decoration: none;
+-webkit-border-radius: 5px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:2px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+} 
+</style>
+
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="viewprofile.html"><input class="button" type="submit" value="View Profile"></a></li>
+<li><a href="viewprofile.html"><input class="button" type="submit" value="View Ticket"></a></li>
+<li><a href="index.html"><input class="button" type="submit" value="Home"></a></li>
+</ul></nav>
+</header>
+<form method="post" action="searchbusServlet" align="center">
+<legend><h2>Search Bus</h2></legend>
+From: <pre><input type="text" name="a1"></pre><br>
+To:  <pre><input type="text" name="a2"></pre><br>
+Date: <pre><input type="text"  name="a3"></pre><br>
+
+<input type="submit" value="search" class="button"></pre><br>
+
+</form>
+
+</body>
+</html>
